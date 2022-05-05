@@ -1,0 +1,29 @@
+#include<iostream.h>
+#include<conio.h>
+class base{
+int x;
+public:
+base()
+{
+cout<<"base constructor value is:"<<endl;
+x=200
+cout<<x<<endl;
+}
+};
+class derived:public base
+{
+int x;
+public:
+derived()
+{
+cout<<"base constructor value is:"<<endl;
+x=100;
+cout<<x<<endl;
+}
+};
+int main()
+{
+derived d1;
+getch();
+return(0);
+}
