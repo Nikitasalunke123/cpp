@@ -1,24 +1,28 @@
 #include<iostream.h>
 #include<conio.h>
-class numb
+class myclass
 {
- public:
- int a,b;
- void  read()
- {
-   cout<<"enter the two number";
-   cin>>a>>b;
- }
- void display()
- {
-   cout<<"a="<<a<<"b="<<b;
- }
+int rollno;
+char name[10];
+public:
+void get()
+{
+cout<<"enter the values::"<<endl;
+cin>>rollno;
+cin>>name;
+}
+void put()
+{
+cout<<"********my information********"<<endl;
+cout<<"my roll no=="<<rollno<<endl;
+cout<<"my name=="<<name<<endl;
+}
 };
-int main()
+void main()
 {
- clrscr();
- numb n1;
- n1.read();
- n1.display();
- getch();
+clrscr();
+myclass m1;
+m1.get();
+m1.put();
+getch();
 }
